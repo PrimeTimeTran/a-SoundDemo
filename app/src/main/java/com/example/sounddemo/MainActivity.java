@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         scrubControl.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                Log.i("Scrubbar changed", Integer.toString(i));
+                mediaPlayer.seekTo(i);
             }
 
             @Override
